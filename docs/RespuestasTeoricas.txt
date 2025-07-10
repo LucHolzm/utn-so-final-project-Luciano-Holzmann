@@ -1,0 +1,48 @@
+ OPCIÓN MÚLTIPLE
+1️ ¿Para qué se utiliza Docker?
+ c) Contenerizar aplicaciones para que se ejecuten de forma consistente en distintos entornos
+
+2️ En un archivo docker-compose.yml, ¿qué hace la etiqueta ports?
+ b) Mapea los puertos del contenedor a los del host
+
+3️ ¿Qué comando construye e inicia contenedores usando docker-compose?
+ a) docker-compose up --build
+
+4️ ¿Cuál de estas afirmaciones es VERDADERA?
+ b) Docker Compose puede definir y ejecutar múltiples contenedores juntos.
+
+5️ ¿Qué ventaja principal ofrece Docker al desarrollar aplicaciones?
+ c) Garantiza que las aplicaciones funcionen igual en cualquier entorno
+
+ VERDADERO O FALSO
+1️ Los contenedores Docker comparten el kernel de la máquina host.
+ Verdadero
+
+2️ Solo puedes ejecutar un contenedor a la vez usando Docker.
+ Falso
+
+3️ En un docker-compose.yml, la etiqueta depends_on asegura que un servicio se inicie antes que otro.
+ Verdadero
+
+4️ Los contenedores creados a partir de la misma imagen siempre tendrán los mismos datos dentro por defecto.
+ Falso
+
+5️ Nginx puede usarse en un contenedor Docker para servir archivos estáticos del frontend y hacer proxy inverso de peticiones a la API.
+ Verdadero
+
+ RESPUESTA CORTA
+1️ ¿Cuál es la diferencia entre un contenedor y una imagen en Docker?
+Una imagen es una plantilla inmutable con todo lo necesario para ejecutar una aplicación.
+Un contenedor es una instancia en ejecución de esa imagen.
+
+2️ ¿Para qué se utilizan volúmenes en Docker?
+Para persistir datos, permitiendo que la información no se pierda cuando el contenedor se detiene o reinicia.
+
+3️ ¿Qué hace la instrucción EXPOSE en un Dockerfile?
+Indica qué puerto va a usar el contenedor, documentando que ese puerto estará disponible para conexiones externas.
+
+4️ Escribe un beneficio de usar Docker en tus proyectos.
+Permite que la aplicación funcione igual en todos los entornos (local, test, producción), evitando problemas de configuración.
+
+5️ ¿Cuál es el propósito de usar Nginx en tu proyecto Docker?
+Sirve el frontend (archivos estáticos) y actúa como proxy inverso, reenviando las solicitudes del navegador al backend.
