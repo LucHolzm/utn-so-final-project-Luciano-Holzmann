@@ -5,7 +5,7 @@ services:
     container_name: students_backend
     build: ./backend
     expose:
-      - "3000"
+      - "4000"
     networks:
       - students_network
     environment:
@@ -14,6 +14,7 @@ services:
       - PGDATABASE=${PGDATABASE}
       - PGHOST=postgres
       - PGPORT=5432
+      - PORT=4000
     depends_on:
       - postgres
 
