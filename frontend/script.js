@@ -9,3 +9,16 @@ document.getElementById("loadButton").addEventListener("click", async () => {
     tbody.appendChild(row);
   });
 });
+document.getElementById("greetButton").addEventListener("click", () => {
+  const nombre = document.getElementById("nameInput").value;
+
+  fetch(`/api/greet?name=${nombre}`)
+    .then(res => res.json())
+    .then(data => {
+      document.getElementById("saludoResultado").innerText = data.message;
+    })
+    .catch(err => {
+      console.error(err);
+      document.getElementById("saludoResultado").innerText = "Error al obtener el saludo.";
+    });
+});
