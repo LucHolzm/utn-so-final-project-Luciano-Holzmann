@@ -44,7 +44,6 @@ document.getElementById("studentForm").addEventListener("submit", async (e) => {
       status.style.color = "green";
       document.getElementById("studentName").value = "";
 
-      // Opcional: recargar la tabla automáticamente
       document.getElementById("loadButton").click();
     } else {
       const error = await response.json();
